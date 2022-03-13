@@ -38,6 +38,17 @@ public class MyClientApp  {
                         String userGivenFilenameToDelete = sc2.nextLine();
                         LockedMe.deleteFiles(userGivenFilenameToDelete);
                         break;
+                    case 4:
+                        //Sprint - 4
+                        System.out.print("Enter your FileName to Search :");
+                        Scanner sc3 = new Scanner(System.in);
+                        String userGivenFilenameToSearch = sc3.nextLine();
+                        LockedMe.SearchFile(userGivenFilenameToSearch);
+                        break;
+                    case 5:
+                        System.out.println("Thanks for choosing LockedMe");
+                        System.exit(0);
+                        break;
                     default:
                         System.out.println("Please choose only in between 1-5");
                 }

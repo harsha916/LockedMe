@@ -111,6 +111,27 @@ public class LockedMe {
         }
     }
 
+    //Sprint -4
+    /**
+     * This method is used to search your file in folder.
+     */
+    public static void SearchFile(String filename)
+    {
+        try {
+            boolean file = false;
+            File f = new File(filePath+"\\"+filename);
+            if(f.exists()) {
+                System.out.println(filename+" File Found in path :"+filePath);
+            }
+            else
+                System.out.println("File is not found in "+filePath);
+        }
+        catch (Exception ex)
+        {
+            System.out.println("volume label syntax is incorrect");
+        }
+    }
+
 }
 
 
