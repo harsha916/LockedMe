@@ -24,7 +24,13 @@ public class MyClientApp  {
                         //Sprint - 1
                         LockedMe.getAllFiles();
                         break;
-
+                    case 2:
+                        //Sprint - 2
+                        System.out.print("Enter your FileName :");
+                        Scanner sc1 = new Scanner(System.in);
+                        String userGivenFilename = sc1.nextLine();
+                        LockedMe.addFiles(userGivenFilename);
+                        break;
                     default:
                         System.out.println("Please choose only in between 1-5");
                 }
