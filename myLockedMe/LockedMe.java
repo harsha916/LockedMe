@@ -88,7 +88,30 @@ public class LockedMe {
             System.out.println("volume label syntax is incorrect");
         }
     }
+
+    //Sprint -3
+    /**
+     * This method is used to delete your file in folder.
+     */
+    public static void deleteFiles(String filename)
+    {
+        try {
+            boolean file = false;
+            File f = new File(filePath+"\\"+filename);
+            if(f.exists()) {
+                f.delete();
+                System.out.println(filename+" file got deleted in path :"+filePath);
+            }
+            else
+                System.out.println("File is not found in "+filePath);
+        }
+        catch (Exception ex)
+        {
+            System.out.println("volume label syntax is incorrect");
+        }
     }
+
+}
 
 
 
